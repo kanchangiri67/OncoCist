@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Navbar } from "../components/Navbar";
+import { Container, Card, Form, Button, Spinner } from "react-bootstrap";
 
 export default function Upload() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
@@ -33,28 +34,30 @@ export default function Upload() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-vh-100">
       <Navbar />
-      <div className="container mx-auto py-10 flex flex-col items-center">
-        <div className="bg-white p-6 shadow-lg rounded-md w-96 text-center">
-          <h2 className="text-xl font-semibold mb-4">Upload MRI Scan</h2>
-          <input type="file" onChange={handleFileChange} className="mb-4" />
-          <button
-            onClick={handleUpload}
-            disabled={loading}
-            className="bg-blue-500 text-white px-4 py-2 rounded-md"
-          >
-            {loading ? "Analyzing..." : "Detect Tumor"}
-          </button>
-        </div>
+      <Container className="upload-container d-flex flex-column align-items-center">
+        <Card className="card-custom p-4 w-50 text-center">
+          <Card.Body>
+            <Card.Title>Upload MRI Scan</Card.Title>
+            <Form.Group controlId="formFile" className="mb-3">
+              <Form.Control type="file" onChange={handleFileChange} />
+            </Form.Group>
+            <Button onClick={handleUpload} disabled={loading} className="btn-custom w-100">
+              {loading ? <Spinner animation="border" size="sm" /> : "Detect Tumor"}
+            </Button>
+          </Card.Body>
+        </Card>
         {result && (
-          <div className="mt-6 p-4 bg-white shadow-md rounded-md">
-            <h3 className="text-lg font-bold">Prediction Result</h3>
-            <p className="text-gray-700">{result.prediction}</p>
-            <p className="text-gray-500">Confidence: {result.confidence}%</p>
-          </div>
+          <Card className="card-custom mt-4 p-4 w-50 text-center">
+            <Card.Body>
+              <Card.Title>Prediction Result</Card.Title>
+              <p>{result.prediction}</p>
+              <p>Confidence: {result.confidence}%</p>
+            </Card.Body>
+          </Card>
         )}
-      </div>
+      </Container>
     </div>
   );
 }
