@@ -20,6 +20,9 @@ export const Navbar = () => {
             <Nav.Link as={Link} to="/results" className="nav-link">
               History
             </Nav.Link>
+            <Nav.Link as={Link} to="/about" className="nav-link">
+              About
+            </Nav.Link>
           </Nav>
         </BSNavbar.Collapse>
       </Container>
