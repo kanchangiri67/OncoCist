@@ -1,24 +1,35 @@
 import { useState } from "react";
 import { Navbar } from "../components/Navbar";
-import { Form, Button, Card, Container } from "react-bootstrap";
+import { Form, Button, Row, Col, Card, Container, Spinner } from "react-bootstrap";
+import { useDropzone } from 'react-dropzone'; // Drag-and-drop
 
 export default function Upload() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [preview, setPreview] = useState<string | null>(null); // 👈 preview state
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState<{ prediction: string; confidence: number } | null>(null);
-  const [doctorNotes, setDoctorNotes] = useState<string>(() => {
-    return localStorage.getItem("doctorNotes") || "";
-  });
+  const [resultImage, setResultImage] = useState<string | null>(null);
+  const [doctorNotes, setDoctorNotes] = useState<string>(() => localStorage.getItem("doctorNotes") || "");
+  const [patientInfo, setPatientInfo] = useState({ name: "", age: "", reports: "" });
 
-  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (event.target.files) {
-      setSelectedFile(event.target.files[0]);
-    }
-  };
+  const { getRootProps, getInputProps } = useDropzone({
+    onDrop: (acceptedFiles) => {
+      if (acceptedFiles.length > 0) {
+        const file = acceptedFiles[0];
+        setSelectedFile(file);
+        setPreview(URL.createObjectURL(file)); // 👈 generate preview
+      }
+    },
+    accept: {
+      'image/jpeg': ['.jpeg', '.jpg'],
+      'image/png': ['.png'],
+      'image/gif': ['.gif'],
+    },
+  });
 
   const handleUpload = async () => {
     if (!selectedFile) return;
     setLoading(true);
+    setResultImage(null); // 👈 Clear previous result before uploading
     const formData = new FormData();
     formData.append("file", selectedFile);
 
@@ -28,7 +39,7 @@ export default function Upload() {
         body: formData,
       });
       const data = await response.json();
-      setResult(data);
+      setResultImage(data.imageUrl);
     } catch (error) {
       console.error("Error uploading file", error);
     } finally {
@@ -43,51 +54,201 @@ export default function Upload() {
 
   const clearDoctorNotes = () => {
     localStorage.removeItem("doctorNotes");
-    setDoctorNotes(""); 
+    setDoctorNotes("");
     alert("Doctor's notes cleared!");
   };
 
+  const handlePatientChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setPatientInfo({ ...patientInfo, [e.target.name]: e.target.value });
+  };
+
+  const savePatientHistory = () => {
+    const newPatientRecord = {
+      name: patientInfo.name,
+      age: patientInfo.age,
+      reports: patientInfo.reports,
+      resultImage: resultImage,
+      doctorNotes: doctorNotes,
+    };
+
+    // Get existing patient records from localStorage
+    const storedHistory = JSON.parse(localStorage.getItem("patientHistory") || "[]");
+    storedHistory.push(newPatientRecord);
+
+    // Save the updated patient history back to localStorage
+    localStorage.setItem("patientHistory", JSON.stringify(storedHistory));
+
+    alert("Patient history saved successfully!");
+  };
+
   return (
-    <div className="min-vh-100 bg-light">
+    <div className="bg-light min-vh-100">
       <Navbar />
-      <Container className="py-5 d-flex flex-column align-items-center">
-        <Card className="shadow-lg p-4 text-center" style={{ maxWidth: "500px", width: "100%" }}>
-          <h2 className="text-primary">Upload MRI Scan</h2>
-          <Form.Group>
-            <Form.Control type="file" onChange={handleFileChange} className="my-3" />
-          </Form.Group>
-          <Button onClick={handleUpload} disabled={loading} className="btn btn-success w-100">
-            {loading ? "Analyzing..." : "Detect Tumor"}
-          </Button>
-        </Card>
+      <Container fluid="md" className="py-4">
+        <Row>
+          {/* Left Column */}
+          <Col md={6} className="p-3">
+            <div className="d-flex flex-column" style={{ height: "100%" }}>
+              {/* Patient Demographics */}
+              <Card className="mb-4 shadow-sm" style={{ flex: 1 }}>
+                <Card.Body>
+                  <Card.Title>Patient Demographics</Card.Title>
+                  <Form>
+                    <Form.Group className="mb-3">
+                      <Form.Label>Name</Form.Label>
+                      <Form.Control
+                        type="text"
+                        name="name"
+                        value={patientInfo.name}
+                        onChange={handlePatientChange}
+                      />
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                      <Form.Label>Age</Form.Label>
+                      <Form.Control
+                        type="text"
+                        name="age"
+                        value={patientInfo.age}
+                        onChange={handlePatientChange}
+                      />
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>Previous Reports</Form.Label>
+                      <Form.Control
+                        as="textarea"
+                        rows={2}
+                        name="reports"
+                        value={patientInfo.reports}
+                        onChange={handlePatientChange}
+                      />
+                    </Form.Group>
+                  </Form>
+                </Card.Body>
+              </Card>
 
-        {result && (
-          <Card className="shadow-lg p-4 mt-4 text-center" style={{ maxWidth: "500px", width: "100%" }}>
-            <h3 className="text-danger">Prediction Result</h3>
-            <p className="fw-bold text-dark">{result.prediction}</p>
-            <p className="text-muted">Confidence: {result.confidence}%</p>
-          </Card>
-        )}
+              {/* Upload Section */}
+              <Card className="shadow-sm" style={{ flex: 1 }}>
+                <Card.Body>
+                  <Card.Title className="mb-3">Upload MRI Scan</Card.Title>
+                  <div
+                    {...getRootProps()}
+                    className="border rounded p-5 text-center mb-3 bg-white"
+                    style={{
+                      borderStyle: "dashed",
+                      backgroundColor: "#f8f9fa",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <input {...getInputProps()} />
+                    <p className="text-muted">Drag & drop or click to browse to upload scan</p>
+                  </div>
 
-        {/* Doctor's Notes Section */}
-        <Card className="shadow-lg p-4 mt-4" style={{ maxWidth: "500px", width: "100%" }}>
-          <h4 className="text-info">Doctor's Notes</h4>
-          <Form.Group>
-            <Form.Control
-              as="textarea"
-              rows={3}
-              value={doctorNotes}
-              onChange={(e) => setDoctorNotes(e.target.value)}
-              placeholder="Enter doctor's observations..."
-            />
-          </Form.Group>
-          <Button className="btn btn-secondary mt-3 w-100" onClick={saveDoctorNotes}>
-            Save Notes
-          </Button>
-          <Button className="btn btn-danger mt-2 w-100" onClick={clearDoctorNotes}>
-            Clear Notes
-          </Button>
-        </Card>
+                  {/* 👇 Image Preview */}
+                  {preview && (
+                    <div className="mb-3 text-center">
+                      <img
+                        src={preview}
+                        alt="Selected MRI"
+                        className="img-fluid rounded border"
+                        style={{ maxHeight: "200px" }}
+                      />
+                    </div>
+                  )}
+
+                  <div className="d-flex gap-2">
+                    <Button
+                      variant="primary"
+                      onClick={handleUpload}
+                      disabled={loading || !selectedFile}
+                      className="w-50"
+                    >
+                      {loading ? (
+                        <>
+                          <Spinner animation="border" size="sm" /> Analyzing...
+                        </>
+                      ) : (
+                        "Submit"
+                      )}
+                    </Button>
+                    <Button
+                      variant="outline-secondary"
+                      onClick={() => {
+                        setSelectedFile(null);
+                        setPreview(null); // 👈 clear preview
+                      }}
+                      className="w-50"
+                    >
+                      Clear
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </div>
+          </Col>
+
+          {/* Right Column */}
+          <Col md={6} className="p-3">
+            <div className="d-flex flex-column" style={{ height: "100%" }}>
+              {/* Output Section */}
+              <Card className="mb-4 shadow-sm" style={{ flex: 1 }}>
+                <Card.Body>
+                  <Card.Title>Prediction Output</Card.Title>
+                  <div
+                    className="d-flex justify-content-center align-items-center border rounded"
+                    style={{
+                      width: "100%",
+                      height: "350px", // 👈 Fixed square-like box
+                      backgroundColor: "#f8f9fa",
+                    }}
+                  >
+                    {loading ? (
+                      <div className="text-center">
+                        <Spinner animation="border" variant="primary" />
+                        <p className="mt-2 text-muted">Processing...</p>
+                      </div>
+                    ) : resultImage ? (
+                      <img
+                        src={resultImage}
+                        alt="Prediction Output"
+                        className="img-fluid rounded border"
+                        style={{ maxWidth: "100%", maxHeight: "100%" }}
+                      />
+                    ) : (
+                      <p className="text-muted">Prediction result will be shown here.</p>
+                    )}
+                  </div>
+                </Card.Body>
+              </Card>
+
+              {/* Doctor Notes */}
+              <Card className="shadow-sm" style={{ flex: 1 }}>
+                <Card.Body>
+                  <Card.Title>Doctor's Notes</Card.Title>
+                  <Form.Group className="mb-3">
+                    <Form.Control
+                      as="textarea"
+                      rows={4}
+                      value={doctorNotes}
+                      onChange={(e) => setDoctorNotes(e.target.value)}
+                      placeholder="Enter doctor's observations..."
+                    />
+                  </Form.Group>
+                  <div className="d-flex gap-2">
+                    <Button variant="success" className="w-50" onClick={saveDoctorNotes}>
+                      Save Notes
+                    </Button>
+                    <Button variant="danger" className="w-50" onClick={clearDoctorNotes}>
+                      Clear Notes
+                    </Button>
+                  </div>
+                  <Button variant="primary" className="w-100 mt-3" onClick={savePatientHistory}>
+                    Save Patient History
+                  </Button>
+                </Card.Body>
+              </Card>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </div>
   );
