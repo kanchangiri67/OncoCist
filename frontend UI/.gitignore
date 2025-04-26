@@ -50,3 +50,14 @@ frontend UI/dist/
 *.bak
 .DS_Store
 
+# images and videos
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
