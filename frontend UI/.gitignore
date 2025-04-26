@@ -1,0 +1,52 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python cache and environment files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.env
+
+# Data and models
+*.sqlite3
+*.keras
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Node and Vite files
+node_modules/
+dist/
+frontend UI/node_modules/
+frontend UI/dist/
+
+# Build artifacts
+*.egg-info/
+*.egg
+*.bak
+.DS_Store
+

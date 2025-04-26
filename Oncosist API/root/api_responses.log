@@ -1,0 +1,4659 @@
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:37:55.039983
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:37:58.742308
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:37:58.902335
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://127.0.0.1:8000/auth/login
+------------------------
+
+HTTP Error [401]: Invalid email or password | Path: http://127.0.0.1:8000/auth/login
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:38:45.645567
+[33mStatus Code:[0m 401
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/auth/signup
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:39:32.037862
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/signup
+[36mRequest JSON:[0m
+{
+    "username": "kanchan67",
+    "full_name": "Kanchan Giri",
+    "position": "Other",
+    "email": "kanchangiri67@yahoo.com",
+    "password": "PA$$Word"
+}
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:39:32.298809
+[32mStatus Code:[0m 201
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:39:50.455605
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/mri/upload?patient_name=Grace+Thompson&age=42&sex=Female&scan_date=2025-04-24
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:41:14.072720
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload?patient_name=Grace+Thompson&age=42&sex=Female&scan_date=2025-04-24
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:41:14.100401
+[33mStatus Code:[0m 422
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:44:53.419308
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:44:53.475315
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/1
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:44:53.531239
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/1
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:44:59.353909
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534693.451301_Test_Image_1.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:44:59.750292
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:45:06.100632
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:45:06.115092
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:45:06.131233
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:45:06.146451
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:45:06.181530
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:45:06.198932
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:45:06.216911
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:45:06.238151
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:45:16.184065
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:45:16.196010
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:45:16.217171
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:45:16.219249
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:46:54.627149
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/2
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:46:54.638294
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/2
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:46:58.957295
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534814.615603_Test_Image_2.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:46:59.291390
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:47:00.756572
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/3
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:47:00.764767
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/3
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:47:04.712586
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534820.741858_Test_Image_2.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:47:04.723113
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:47:13.667566
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/4
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:47:13.676343
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/4
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:47:17.640650
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534833.654361_Test_Image_2.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:47:17.967499
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:47:19.993656
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:47:20.020328
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:47:20.071323
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:47:20.093847
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:51:07.162297
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:51:07.164291
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:51:07.181273
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:51:07.184840
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:52:26.935843
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:52:26.936952
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:52:26.962789
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:52:26.981216
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:52:35.454645
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:52:35.455610
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:52:35.484132
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:52:35.491049
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/auth/signup
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:53:09.153534
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/signup
+[36mRequest JSON:[0m
+{
+    "username": "bijay22",
+    "full_name": "Bijay Chaudhary",
+    "position": "Doctor",
+    "email": "bijay@example.com",
+    "password": "secure123"
+}
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:53:09.387985
+[32mStatus Code:[0m 201
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:53:23.360314
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:54:20.723279
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/5
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:54:20.735191
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/5
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:54:24.766840
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745535260.711113_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:54:25.090371
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:54:33.575493
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:54:33.579457
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:54:33.602559
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:54:33.606554
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:54:41.267634
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:54:43.147276
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:54:43.153470
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:54:43.179576
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T17:54:43.183200
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/auth/signup
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:03:55.179800
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/signup
+[36mRequest JSON:[0m
+{
+    "username": "areej",
+    "full_name": "Areej A",
+    "position": "Doctor",
+    "email": "areej@yahoo.com",
+    "password": "areej123"
+}
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:03:55.696049
+[32mStatus Code:[0m 201
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:04:11.941188
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:05:40.056698
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:05:40.253048
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/6
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:05:40.284543
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/6
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:05:54.292065
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745543140.182109_Test_Image_1.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:05:55.062949
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:00.067808
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:00.409153
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:00.412706
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:00.431943
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:00.540066
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:00.548506
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:00.617736
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:00.618802
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:03.581241
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:03.603028
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:03.660172
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:03.676922
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:36.815807
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:38.180032
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534833.654361_Test_Image_2.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:38.337216
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:38.342709
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534820.741858_Test_Image_2.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:38.384400
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534814.615603_Test_Image_2.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:38.403526
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:38.410159
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534693.451301_Test_Image_1.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:38.442096
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:38.448332
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:51.483251
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:54.330008
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:54.382838
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745535260.711113_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:54.487103
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:54.512717
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:06:54.523678
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:07:03.526000
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:07:04.797399
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:07:04.806413
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:07:04.884826
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:07:04.909068
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:07:36.928288
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:07:36.966705
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:07:37.017607
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:07:37.043561
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:12:57.589090
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:12:58.093248
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:13:24.338195
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:13:29.819682
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:13:50.096362
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:14:35.275368
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:14:35.277422
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:14:35.346587
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:14:35.352109
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:09.144592
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:09.758696
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:20.088677
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:24.528646
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:24.553079
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:24.561684
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:24.595622
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:24.679507
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:24.728996
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:24.785845
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:24.827731
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534833.654361_Test_Image_2.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534814.615603_Test_Image_2.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534820.741858_Test_Image_2.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534693.451301_Test_Image_1.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:25.349020
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:25.349020
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:25.358056
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:56:25.361504
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:59:07.121464
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:59:07.900907
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/7
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:59:07.932041
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/7
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:59:25.180726
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745546347.220582_Test_Image_2.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:59:25.541536
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:59:47.214317
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:59:47.283907
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:59:47.371997
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T20:59:47.395040
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T21:00:22.019790
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T21:00:22.043664
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T21:00:22.097696
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T21:00:22.110306
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/delete/3
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T21:00:29.797691
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m DELETE
+[36mURL:[0m http://localhost:8000/history/delete/3
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T21:00:29.874378
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T21:04:18.770351
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T21:04:20.872772
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T21:04:20.887939
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T21:04:20.936821
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-24T21:04:20.953939
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:25:48.083599
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:25:48.083599
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:25:48.083599
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:25:48.088855
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+HTTP Error [401]: Could not validate credentials | Path: http://localhost:8000/history/user/all
+HTTP Error [401]: Could not validate credentials | Path: http://localhost:8000/history/user/patients
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:25:48.100632
+[33mStatus Code:[0m 401
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:25:48.101626
+[33mStatus Code:[0m 401
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+HTTP Error [401]: Could not validate credentials | Path: http://localhost:8000/history/user/all
+HTTP Error [401]: Could not validate credentials | Path: http://localhost:8000/history/user/patients
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:25:48.112675
+[33mStatus Code:[0m 401
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:25:48.114054
+[33mStatus Code:[0m 401
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:26:35.377907
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:26:35.698607
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:26:43.232950
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:26:45.223314
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:26:45.224314
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:26:45.235352
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:26:45.243628
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745546347.220582_Test_Image_2.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534833.654361_Test_Image_2.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534814.615603_Test_Image_2.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745534693.451301_Test_Image_1.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:26:45.675263
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:26:45.677271
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:26:45.678545
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:26:45.680998
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:32:50.706724
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:32:50.709209
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:33:12.791374
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:33:12.793362
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:33:42.069960
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:33:42.102010
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/8
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:33:42.115597
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/8
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:33:49.557043
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745570022.092601_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:33:49.962129
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:34:00.312622
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:34:00.349374
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:34:00.353416
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:34:00.364168
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:35:02.504421
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:35:12.624496
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:36:19.628927
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/9
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:36:19.638736
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/9
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:36:23.830313
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745570179.599293_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:36:24.148146
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:36:41.262658
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:36:41.278541
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:36:41.290054
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:36:41.302020
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:36:41.314531
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:36:41.331815
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745570022.092601_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:36:41.350157
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:36:41.356948
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:36:41.383202
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:37:25.221215
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:37:27.473185
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:37:27.487377
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:37:27.497152
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:37:27.509199
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745535260.711113_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:37:27.844465
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:47:50.507675
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:48:10.115151
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:48:10.155855
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/10
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:48:10.160678
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/10
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:48:14.153873
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745570890.140577_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T03:48:14.483976
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:00:24.732884
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:00:25.001699
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:00:33.926158
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:00:34.021699
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/11
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:00:34.027262
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/11
+------------------------
+
+HTTP Error [404]: Not Found | Path: http://localhost:8000/predict/11
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:00:34.031348
+[33mStatus Code:[0m 404
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:03:06.846916
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:03:28.338450
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:03:33.345694
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/12
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:03:33.353242
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/12
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:03:38.813669
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745571813.333713_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:03:39.200452
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:11:05.380446
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:11:27.010113
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:11:32.053645
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:11:32.179796
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/13
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:11:32.190663
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/13
+------------------------
+
+Unexpected Error: Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "conv2d_38" is incompatible with the layer: expected axis -1 of input shape to have value 1, but received input with shape (1, 512, 512, 3)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 512, 512, 3), dtype=float32)
+  • training=False
+  • mask=None | Path: http://localhost:8000/predict/13
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:14:17.336617
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:14:41.302238
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:14:48.875278
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/14
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:14:48.882481
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/14
+------------------------
+
+Unexpected Error: 'function' object has no attribute 'predict' | Path: http://localhost:8000/predict/14
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:15:24.852141
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:15:46.556658
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:15:50.124047
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/15
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:15:50.131178
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/15
+------------------------
+
+Unexpected Error: Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "conv2d_38" is incompatible with the layer: expected axis -1 of input shape to have value 1, but received input with shape (1, 512, 512, 3)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 512, 512, 3), dtype=float32)
+  • training=False
+  • mask=None | Path: http://localhost:8000/predict/15
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:21:08.846767
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:21:09.016709
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:21:19.377739
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/16
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:21:19.381218
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/16
+------------------------
+
+Unexpected Error: Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "conv2d_38" is incompatible with the layer: expected axis -1 of input shape to have value 1, but received input with shape (1, 512, 512, 3)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 512, 512, 3), dtype=float32)
+  • training=False
+  • mask=None | Path: http://localhost:8000/predict/16
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:32:55.787613
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:32:56.017907
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:33:01.822623
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:33:01.921247
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/17
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:33:01.926439
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/17
+------------------------
+
+Unexpected Error: name 'tf' is not defined | Path: http://localhost:8000/predict/17
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:33:33.390006
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:33:50.992772
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:33:53.950554
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/18
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:33:53.963838
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/18
+------------------------
+
+Unexpected Error: File not found: filepath=E:\SLU\Spring 2025\PSD\OncoCist\Oncosist APIootpp\ml_models\cnn_model.keras. Please ensure the file is an accessible `.keras` zip file. | Path: http://localhost:8000/predict/18
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:35:03.604255
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:35:20.737385
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:35:38.365877
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/19
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:35:38.374474
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/19
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:35:45.907654
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745573738.345232_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:35:46.328436
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:38:24.425376
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:38:24.651728
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:38:26.441819
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/20
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:38:26.449050
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/20
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:38:34.137100
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745573906.421879_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:38:34.542287
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:42:29.549885
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:42:47.231505
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:43:32.488025
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:43:32.574230
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/21
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:43:32.584872
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/21
+------------------------
+
+Unexpected Error: File not found: filepath=E:\SLU\Spring 2025\PSD\OncoCist\Oncosist API\root\app\services\cnn_model.keras. Please ensure the file is an accessible `.keras` zip file. | Path: http://localhost:8000/predict/21
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:46:57.155468
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:47:15.015612
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:47:18.212133
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/22
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:47:18.219622
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/22
+------------------------
+
+Unexpected Error: File not found: filepath=E:\SLU\Spring 2025\PSD\OncoCist\Oncosist API\root\app\services\cnn_model.keras. Please ensure the file is an accessible `.keras` zip file. | Path: http://localhost:8000/predict/22
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:48:05.583134
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:48:20.795702
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+HTTP Error [401]: Could not validate credentials | Path: http://localhost:8000/mri/upload
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:48:25.279874
+[33mStatus Code:[0m 401
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:49:11.757965
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:49:28.557858
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+HTTP Error [401]: Could not validate credentials | Path: http://localhost:8000/mri/upload
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:49:47.503175
+[33mStatus Code:[0m 401
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:50:10.653038
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:50:27.456225
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+HTTP Error [401]: Could not validate credentials | Path: http://localhost:8000/mri/upload
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:50:44.225425
+[33mStatus Code:[0m 401
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:50:54.914697
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:51:09.672527
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/23
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:51:09.689081
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/23
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:51:14.615212
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745574669.661411_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:51:15.012599
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:51:52.144326
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.341532
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.342591
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.344638
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.346463
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.347955
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.397887
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.410390
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.428606
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.441206
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.480321
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.496361
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.523303
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.534045
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/uploads/patient_22/1745574438.201457_Test_Image_2.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/uploads/patient_21/1745574212.555202_Test_Image_2.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.835858
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.838271
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745573906.421879_Test_Image_3.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745573738.345232_Test_Image_3.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/uploads/patient_18/1745573633.940825_Test_Image_3.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/uploads/patient_17/1745573581.906316_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.850433
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.855015
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.856097
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.857370
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/uploads/patient_16/1745572879.366243_Test_Image_3.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/uploads/patient_15/1745572550.108356_Test_Image_3.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/uploads/patient_14/1745572488.857284_Test_Image_3.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/uploads/patient_13/1745572292.164222_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.893959
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.900325
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.904318
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/uploads/patient_11/1745571634.007453_Test_Image_3.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745571813.333713_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.910101
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.919958
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.922302
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745570890.140577_Test_Image_3.png
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745535260.711113_Test_Image_3.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.940591
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:09.942268
+[31mStatus Code:[0m 304
+[31mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/delete/22
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:24.583913
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m DELETE
+[36mURL:[0m http://localhost:8000/history/delete/22
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:24.624036
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/delete/21
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:26.445856
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m DELETE
+[36mURL:[0m http://localhost:8000/history/delete/21
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:26.468115
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/delete/23
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:32.771691
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m DELETE
+[36mURL:[0m http://localhost:8000/history/delete/23
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:32.823190
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/delete/18
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:36.994756
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m DELETE
+[36mURL:[0m http://localhost:8000/history/delete/18
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:37.016372
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/delete/17
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:41.219296
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m DELETE
+[36mURL:[0m http://localhost:8000/history/delete/17
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:41.245245
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/delete/16
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:42.873101
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m DELETE
+[36mURL:[0m http://localhost:8000/history/delete/16
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:42.901828
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/delete/15
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:44.718380
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m DELETE
+[36mURL:[0m http://localhost:8000/history/delete/15
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:44.752257
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/delete/14
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:46.148376
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m DELETE
+[36mURL:[0m http://localhost:8000/history/delete/14
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:46.172018
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/delete/13
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:47.988068
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m DELETE
+[36mURL:[0m http://localhost:8000/history/delete/13
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:52:48.006242
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:53:12.058977
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:53:30.661151
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:53:41.823366
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:53:50.818462
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:54:15.841731
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:54:15.921101
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/21
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:54:15.927635
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/21
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:54:21.519549
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1745574855.904506_Test_Image_2.png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:54:21.929785
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:54:31.059980
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:54:31.076861
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:54:31.114577
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-25T04:54:31.158904
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
