@@ -1,0 +1,18 @@
+services:
+  frontend:
+    build:
+      context: ./frontend UI
+    ports:
+      - "5173:5173"
+    working_dir: /app
+    command: npm run dev -- --host
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./Oncosist API/root
+    ports:
+      - "8000:8000"
+    working_dir: /app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000

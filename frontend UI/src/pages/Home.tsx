@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     <div className="home-container">
       {/* Background Video */}
       <video className="video-background" autoPlay muted loop playsInline>
-        <source src="/src/assets/159049-818026306_small.mp4" type="video/mp4" />
+        <source src="/src/assets/istockphoto-1707385401-640_adpp_is.mp4_1742969428173.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="home-overlay"></div>

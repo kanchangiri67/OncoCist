@@ -4657,3 +4657,816 @@ HTTP Error [401]: Could not validate credentials | Path: http://localhost:8000/m
 [32mDescription:[0m Successful Response
 -------------------------
 
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:30:35.919289
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/favicon.ico
+------------------------
+
+HTTP Error [404]: Not Found | Path: http://127.0.0.1:8000/favicon.ico
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:30:37.486467
+[33mStatus Code:[0m 404
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:31:08.559674
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:31:32.866982
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:31:33.533337
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/auth/signup
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:32:52.551358
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/signup
+[36mRequest JSON:[0m
+{
+    "username": "ramhari",
+    "full_name": "ramhari",
+    "position": "Doctor",
+    "email": "ramhari@gmail.com",
+    "password": "ramhari"
+}
+------------------------
+
+Unexpected Error: bcrypt: no backends available -- recommend you install one (e.g. 'pip install bcrypt') | Path: http://localhost:8000/auth/signup
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:57:16.660966
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/docs
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:57:22.860692
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://127.0.0.1:8000/openapi.json
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:57:23.242754
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/auth/signup
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:58:21.176326
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/signup
+[36mRequest JSON:[0m
+{
+    "username": "ramhari",
+    "full_name": "ramhari",
+    "position": "Doctor",
+    "email": "ramhari@gmail.com",
+    "password": "ramhari"
+}
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:58:21.623242
+[32mStatus Code:[0m 201
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:58:51.694822
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:59:14.841754
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:59:14.845918
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:59:14.853431
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:59:14.854437
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:59:14.878567
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:59:14.885565
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:59:14.894241
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T19:59:14.898623
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T20:04:14.292005
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T20:56:51.225724
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T20:57:20.675341
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/favicon.ico
+------------------------
+
+HTTP Error [404]: Not Found | Path: http://localhost:8000/favicon.ico
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-04-28T20:57:21.564695
+[33mStatus Code:[0m 404
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/auth/signup
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:18:10.983050
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/signup
+[36mRequest JSON:[0m
+{
+    "username": "ram",
+    "full_name": "ram",
+    "position": "Surgeon",
+    "email": "ram@gmail.com",
+    "password": "ramharry"
+}
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:18:12.676724
+[32mStatus Code:[0m 201
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:18:29.461549
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:08.191600
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:08.571120
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/1
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:08.587167
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/1
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:19.086855
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1746083948.461775_Screenshot (126).png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:19.746926
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:28.359559
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:28.394249
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:28.419283
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:28.433276
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:28.478272
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:28.502492
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:28.523491
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:28.543146
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/delete/1
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:34.091209
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m DELETE
+[36mURL:[0m http://localhost:8000/history/delete/1
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:19:34.308465
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/auth/login
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:28:22.200899
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:28:36.028778
+[33mStatus Code:[0m 422
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:28:44.584364
+[33mStatus Code:[0m 422
+[33mDescription:[0m Error Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:32.986850
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/mri/upload
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:33.226812
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/predict/1
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:33.237751
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m POST
+[36mURL:[0m http://localhost:8000/predict/1
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:36.468260
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/predictions/overlay_1746084573.137502_Screenshot (11).png
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:36.801684
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:42.127582
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:42.129533
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:42.131537
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:42.133531
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:42.145570
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:42.148535
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/all
+------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m GET
+[36mURL:[0m http://localhost:8000/history/user/patients
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:42.166535
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:42.170542
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m OPTIONS
+[36mURL:[0m http://localhost:8000/history/delete/1
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:52.650649
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
+
+--- Incoming Request ---
+[36mMethod:[0m DELETE
+[36mURL:[0m http://localhost:8000/history/delete/1
+------------------------
+
+
+--- Outgoing Response ---
+[32mTimestamp:[0m 2025-05-01T02:29:53.112376
+[32mStatus Code:[0m 200
+[32mDescription:[0m Successful Response
+-------------------------
+
